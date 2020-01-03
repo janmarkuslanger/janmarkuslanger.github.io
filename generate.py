@@ -5,7 +5,7 @@ import sys
 NOT_REMOVE = ('.git', 'src', '.gitattributes', '.gitignore', 'generate.py')
 
 os.system('cd src && npm run generate')
-os.system('mv src/dist/* ../*')
+os.system('cp src/dist/* ./../*')
 
 for file in os.listdir('./'):
     if file not in NOT_REMOVE:
