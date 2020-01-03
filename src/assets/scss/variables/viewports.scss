@@ -1,0 +1,24 @@
+$phoneViewportWidth: 23.375rem;         // 374
+$tabletViewportWidth: 48rem;         // 768px
+$desktopViewportWidth: 80rem;         // 1200px
+
+$large: 80rem; // 1280px
+
+/** Viewport-variables **/
+// Useage @media $chooseViewport
+$tabletViewport: screen and (min-width: #{$tabletViewportWidth});
+$desktopViewport: screen and (min-width: #{$desktopViewportWidth});
+
+
+$unit-intervals: (
+  'px': 0,
+  'em': 0,
+  'rem': 0,
+  '': 0
+);
+
+$breakpoints: (
+  'phone': 30rem,  //  480px
+  'tablet': 48rem, //  768px
+  'desktop': 80rem // 1280px
+);
