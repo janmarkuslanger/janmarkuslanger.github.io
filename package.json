@@ -9,7 +9,8 @@
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup"
+    "deploy": "push-dir --dir=dist --branch=master --cleanup",
+    "merge": "git pull origin master --allow-unrelated-histories"
   },
   "dependencies": {
     "nuxt": "^2.0.0",
