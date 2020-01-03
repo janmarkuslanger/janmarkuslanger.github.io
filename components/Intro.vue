@@ -16,7 +16,7 @@
 
       <div class="text">
         <p>Hey there 👋, my name is Jan and I am a so called computer freak from germany.<br>I love to code all day with tons of coffee.<br>Back in the days as a young student I needed money. So I started coding websites with HTML and CSS.<br>Later on I was learning Javascript which is one of my two favorite languages. Next to Javscript I was learning NodeJS, PHP and MySQL. With those languages and tools I was able to create websites, shops and apps. But that wasn´t enought for me, because PHP didn´t make me happy at all. So I decided to learn Python. It was love of the first sight. With Python I can code all the things you need as a software engineer. I built an instagram bot, a twitter bot and an api cms system.</p>
-        <p>Python and Javascript are my two favorite languages.<br>Besides coding I do a lot of sports like boxing, wrestling and fitness or walking with my dog.</p>
+        <p>Python and Javascript are my two favorite languages.<br>Besides coding I try to stay fit with wrestling and fitness or walking with my dog.</p>
       </div>
 
     </div>
