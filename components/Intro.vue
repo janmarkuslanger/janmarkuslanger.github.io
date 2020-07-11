@@ -15,9 +15,11 @@
       </div>
 
       <div class="text">
-        <p>Hey there 👋, my name is Jan and I am a so called computer freak from germany.<br>I love to code all day with tons of coffee.<br>Back in the days as a young student I needed money. So I started coding websites with HTML and CSS.<br>Later on I was learning Javascript which is one of my two favorite languages. Next to Javscript I was learning NodeJS, PHP and MySQL. With those languages and tools I was able to create websites, shops and apps. But that wasn´t enought for me, because PHP didn´t make me happy at all. So I decided to learn Python. It was love of the first sight. With Python I can code all the things you need as a software engineer. I built an instagram bot, a twitter bot and an api cms system.</p>
-        <p>Python and Javascript are my two favorite languages.<br>Besides coding I try to stay fit with wrestling and fitness or walking with my dog.</p>
-        <p>Do you have a job offer for me or just want to talk? Whenever you have a question or something else feel free to contact me. <a href="mailto:janmarkuslanger10121994@gmail.com">Write me</a></p>
+        <p>Hey there 👋, my name ist Jan.</p>
+        <p>I am a so-called nerd who loves to code and think about solutions for problems. Back in the days, I started to learn the basics of frontend development. So at this time, I created websites with HTML and CSS.
+And of course, both were not enough to do a great job, so this got me into javascript. It was love at first sight. With growing requirements, I needed to dive deeper and learned MySQL, NodeJS, and PHP. With those languages, I was able to create and modify websites, shops, and apps.
+Nevertheless, I wanted to learn more languages, and so I learned Python.
+In my free time, I mostly code in Python or Javascript. I try to learn new things with little side-projects on Github like a twitter bot or a tab switcher. Coding and software engineering is my bis passion. I always try to learn to be better today than yesterday.</p>
       </div>
 
     </div>
