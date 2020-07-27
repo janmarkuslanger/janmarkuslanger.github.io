@@ -19,7 +19,7 @@
         <p>I am a so-called nerd who loves to code and think about solutions for problems. Back in the days, I started to learn the basics of frontend development. So at this time, I created websites with HTML and CSS.
 And of course, both were not enough to do a great job, so this got me into javascript. It was love at first sight. With growing requirements, I needed to dive deeper and learned MySQL, NodeJS, and PHP. With those languages, I was able to create and modify websites, shops, and apps.
 Nevertheless, I wanted to learn more languages, and so I learned Python.
-In my free time, I mostly code in Python or Javascript. I try to learn new things with little side-projects on Github like a twitter bot or a tab switcher. Coding and software engineering is my bis passion. I always try to learn to be better today than yesterday.</p>
+In my free time, I mostly code in Python or Javascript. I try to learn new things with little side-projects on Github like a twitter bot or a tab switcher. Coding and software engineering is my big passion. Learning is a never ending process.</p>
       </div>
 
     </div>
