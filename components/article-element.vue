@@ -13,7 +13,7 @@ export default {
 </script>
 
 <style lang="scss">
-    .article-.article-element__inside {
+    .article-element__inside {
         padding: 40px 20px;
     }
 

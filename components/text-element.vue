@@ -21,6 +21,17 @@ export default {
 }
 </script>
 
-<style lang="scss">
+<style lang="scss" scoped>
+    .text-element__title {
+        font-size: 20px;
+        margin-bottom: 20px;
+    }
 
+    p {
+        margin-bottom: 20px;
+    }
+
+    @media only screen and (min-width: $desktop-breakpoint) {
+
+    }
 </style>
