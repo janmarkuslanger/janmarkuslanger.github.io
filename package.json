@@ -1,24 +1,24 @@
 {
-  "name": "janmarkuslanger.github",
+  "name": "janmarkuslanger.github.io",
   "version": "1.0.0",
-  "description": "I am a software engineer. Python and Javascript.",
-  "author": "Jan-Markus Langer",
   "private": true,
   "scripts": {
     "dev": "nuxt",
     "build": "nuxt build",
     "start": "nuxt start",
     "generate": "nuxt generate",
-    "deploy": "push-dir --dir=dist --branch=master --cleanup",
-    "merge": "git pull origin master --allow-unrelated-histories"
+    "lint:js": "eslint --ext .js,.vue --ignore-path .gitignore .",
+    "lint": "npm run lint:js"
   },
   "dependencies": {
-    "nuxt": "^2.0.0",
-    "sass-loader": "^8.0.0"
+    "core-js": "^3.6.5",
+    "nuxt": "^2.14.5"
   },
   "devDependencies": {
-    "@nuxtjs/style-resources": "^1.0.0",
-    "node-sass": "^4.14.1",
-    "push-dir": "^0.4.1"
+    "@nuxtjs/eslint-config": "^3.1.0",
+    "@nuxtjs/eslint-module": "^2.0.0",
+    "babel-eslint": "^10.1.0",
+    "eslint": "^7.8.1",
+    "eslint-plugin-nuxt": "^1.0.0"
   }
 }

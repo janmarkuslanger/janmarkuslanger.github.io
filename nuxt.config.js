@@ -1,32 +1,42 @@
-
 export default {
-  mode: 'spa',
-  /*
-  ** Headers of the page
-  */
+  // Target (https://go.nuxtjs.dev/config-target)
+  target: 'static',
+
+  // Global page headers (https://go.nuxtjs.dev/config-head)
   head: {
-    title: 'Jan-Markus Langer | Developer',
+    title: 'janmarkuslanger.github.io',
     meta: [
       { charset: 'utf-8' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-      { hid: 'description', name: 'description', content: process.env.npm_package_description || '' }
+      { hid: 'description', name: 'description', content: '' }
     ],
     link: [
-      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' },
-      { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css?family=IBM+Plex+Sans:400,500,500i,700,700i&display=swap'}
+      { rel: 'icon', type: 'image/x-icon', href: '/favicon.ico' }
     ]
   },
-  loading: { color: '#fff' },
-  /*
-  ** Nuxt.js modules
-  */
-  modules: [
-    '@nuxtjs/style-resources'
+
+  // Global CSS (https://go.nuxtjs.dev/config-css)
+  css: [
   ],
-  styleResources: {
-    scss: [
-      'assets/scss/index.scss'
-    ]
-  },
-  buildDir: '../test'
+
+  // Plugins to run before rendering page (https://go.nuxtjs.dev/config-plugins)
+  plugins: [
+  ],
+
+  // Auto import components (https://go.nuxtjs.dev/config-components)
+  components: true,
+
+  // Modules for dev and build (recommended) (https://go.nuxtjs.dev/config-modules)
+  buildModules: [
+    // https://go.nuxtjs.dev/eslint
+    '@nuxtjs/eslint-module'
+  ],
+
+  // Modules (https://go.nuxtjs.dev/config-modules)
+  modules: [
+  ],
+
+  // Build Configuration (https://go.nuxtjs.dev/config-build)
+  build: {
+  }
 }
