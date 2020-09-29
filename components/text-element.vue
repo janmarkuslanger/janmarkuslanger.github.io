@@ -33,6 +33,10 @@ export default {
         line-height: 1.5;
     }
 
+    a {
+        color: $red;
+    }
+
     @media only screen and (min-width: $desktop-breakpoint) {
 
         .text-element__title {
