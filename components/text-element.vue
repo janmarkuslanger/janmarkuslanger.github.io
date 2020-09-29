@@ -29,9 +29,20 @@ export default {
 
     p {
         margin-bottom: 20px;
+        font-size: 16px;
+        line-height: 1.5;
     }
 
     @media only screen and (min-width: $desktop-breakpoint) {
+
+        .text-element__title {
+            font-size: 30px;
+            margin-bottom: 40px;
+        }
+
+        p {
+            font-size: 20px;
+        }
 
     }
 </style>
