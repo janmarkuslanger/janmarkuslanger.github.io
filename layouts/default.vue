@@ -1,8 +1,20 @@
 <template>
   <div class="default-layout">
+    <HeaderElement />
     <Nuxt />
   </div>
 </template>
+
+<script>
+
+import HeaderElement from '@/components/header-element.vue';
+
+export default {
+  components: {
+    HeaderElement,
+  },
+}
+</script>
 
 <style lang="scss">
   @import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@400;500&display=swap');
