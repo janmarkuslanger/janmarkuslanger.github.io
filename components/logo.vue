@@ -19,4 +19,10 @@ export default {
         font-weight: 500;
         text-decoration: none;
     }
+
+    @media only screen and (min-width: $desktop-breakpoint) {
+        .logo {
+            font-size: 25px;
+        }
+    }
 </style>

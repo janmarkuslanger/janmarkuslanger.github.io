@@ -26,8 +26,6 @@ export default {
         top: 0;
         left: 0;
         width: 100%;
-        background-color: $yellow;
-        cursor: pointer;
     }
     .header-element__inside {
         position: relative;
@@ -44,5 +42,18 @@ export default {
         top: 50%;
         right: 20px;
         transform: translateY(-50%);
+    }
+
+    @media only screen and (min-width: $desktop-breakpoint) {
+        .header-element__inside {
+            width: $desktop-breakpoint - 20px;
+            margin: 0 auto;
+        }
+        .header-element__logo {
+            left: 0;
+        }
+        .header-element__burger {
+            right: 0;
+        }
     }
 </style>

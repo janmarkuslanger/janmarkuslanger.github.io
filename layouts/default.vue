@@ -48,5 +48,15 @@ export default {
     color: $white;
     background: $yellow;
   }
+
+  .default-layout {
+    padding-top: $headerHeightSmall;
+  }
+
+  @media only screen and (min-width: $desktop-breakpoint) {
+    .default-layout {
+    padding-top: $headerHeightLarge;
+  }
+  }
 </style>
 
