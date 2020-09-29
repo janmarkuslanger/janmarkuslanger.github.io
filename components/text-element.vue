@@ -34,6 +34,11 @@ export default {
     }
 
     a {
+        color: $white;
+        transition: color $cubiz .5s;
+    }
+
+    a:hover {
         color: $red;
     }
 
