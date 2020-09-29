@@ -48,6 +48,7 @@ export default {
         .header-element__inside {
             width: $desktop-breakpoint - 20px;
             margin: 0 auto;
+            height: $headerHeightLarge;
         }
         .header-element__logo {
             left: 0;
