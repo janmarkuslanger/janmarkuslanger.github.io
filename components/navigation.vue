@@ -1,5 +1,5 @@
 <template>
-    <nav class="navigation">
+    <nav class="navigation" :class="{'navigation--active': isActive}">
         <div class="navigation__inside">
 
             <ul class="navigation__links">
@@ -15,7 +15,12 @@
 
 <script>
 export default {
-    
+    props: {
+        isActive: {
+            type: Boolean,
+            default: false,
+        },
+    },
 };
 </script>
 
