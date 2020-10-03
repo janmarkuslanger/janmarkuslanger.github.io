@@ -27,12 +27,10 @@
 <script>
 
 import Logo from '@/components/logo.vue';
-import Navigation from '@/components/navigation.vue';
 
 export default {
     components: {
         Logo,
-        Navigation,
     },
     data: function() {
         return {
@@ -64,6 +62,7 @@ export default {
         top: 50%;
         left: 20px;
         transform: translateY(-50%);
+        z-index: 1;
     }
     .header-element__burger {
         position: absolute;
@@ -76,6 +75,7 @@ export default {
         width: 40px;
         height: 40px;
         cursor: pointer;
+        z-index: 1;
     }
     .burger__inside {
         position: absolute;
@@ -119,7 +119,41 @@ export default {
     }
 
     .navigation {
-        display: none;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: $black;
+        z-index: 0;
+    }
+
+    .navigation__inside {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        padding: $headerHeightSmall 20px;
+    }
+
+    .navigation__links {
+        list-style: none;
+    }
+
+    .navigation__item {
+        margin-bottom: 20px;
+
+        &:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .navigation__link {
+        color: $white;
+        text-decoration: none;
     }
 
     @media only screen and (min-width: $desktop-breakpoint) {
