@@ -43,5 +43,22 @@ export default {
 
   // Build Configuration (https://go.nuxtjs.dev/config-build)
   build: {
-  }
+  },
+
+  transition: {
+    css: false,
+    leave(el, done) {
+      const transitionElementClassName = 'route-transition-element';
+      const transitionElement = document.querySelector(`.${transitionElementClassName}`);
+      transitionElement.classList.add(`${transitionElementClassName}--active`);
+
+      const onAnimationEnd = () => {
+        transitionElement.classList.remove(`${transitionElementClassName}--active`);
+        transitionElement.removeEventListener('animationend', onAnimationEnd);
+        done();
+      };
+
+      transitionElement.addEventListener('animationend', onAnimationEnd);
+    },
+  },
 }

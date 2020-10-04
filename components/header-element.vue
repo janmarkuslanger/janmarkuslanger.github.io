@@ -11,15 +11,15 @@
                 </div>
             </div>
 
-            <transition name="navigation--slide" v-on:before-leave="beforeNavigationSlide" v-on:after-enter="afterNavigationSlide">
+            <transition name="navigation--slide" v-on:after-enter="afterNavigationSlide">
                 <nav class="navigation" v-if="isActive">
                     <div class="navigation__inside">
                         <ul class="navigation__links">
                             <transition  name="navigation__item--slide">
-                                <li v-if="isLinkActive" class="navigation__item"><nuxt-link class="navigation__link" to="/projects">Projects</nuxt-link></li>
+                                <li v-if="isLinkActive" class="navigation__item" @click="onBurgerClick"><nuxt-link class="navigation__link" to="/projects" >Projects</nuxt-link></li>
                             </transition>
                             <transition  name="navigation__item--slide" v-on:after-leave="afterNavigationLinkLeave">
-                                <li v-if="isLinkActive" class="navigation__item"><nuxt-link class="navigation__link" to="/contact">Contact</nuxt-link></li>
+                                <li v-if="isLinkActive" class="navigation__item" @click="onBurgerClick"><nuxt-link class="navigation__link" to="/contact" >Contact</nuxt-link></li>
                             </transition>
                         </ul>
                     </div>
@@ -39,7 +39,8 @@ export default {
         Logo,
     },
     methods: {
-        onBurgerClick: function(el) {
+        onBurgerClick: function() {
+            console.log('sdfsdf');
             if (this.isActive) {
                 this.isLinkActive = false;
                 return;
@@ -47,10 +48,10 @@ export default {
 
             this.isActive = true;
         },
-        afterNavigationSlide: function(el) {
+        afterNavigationSlide: function() {
             this.isLinkActive = true;
         },
-        afterNavigationLinkLeave: function(el) {
+        afterNavigationLinkLeave: function() {
             this.isActive = false;
         },
     },

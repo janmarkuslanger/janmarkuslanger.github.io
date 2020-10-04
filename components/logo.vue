@@ -1,5 +1,5 @@
 <template>
-    <a href="/" class="logo" :class="cssClasses">Jan-Markus Langer</a>
+    <nuxt-link to="/" class="logo" :class="cssClasses">Jan-Markus Langer</nuxt-link>
 </template>
 
 <script>
