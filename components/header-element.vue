@@ -3,7 +3,7 @@
         <div class="header-element__inside">
             <Logo :cssClasses="'header-element__logo'" />
             
-            <div class="burger header-element__burger" :class="cssClasses" @click="isActive = !isActive">
+            <div class="burger header-element__burger" :class="cssClasses" @click="onBurgerClick">
                 <div class="burger__inside">
                     <div class="burger__line" :class="{'burger__line--active': isActive}"></div>
                     <div class="burger__line" :class="{'burger__line--active': isActive}"></div>
@@ -11,14 +11,20 @@
                 </div>
             </div>
 
-            <nav class="navigation" :class="{'navigation--active': isActive}">
-                <div class="navigation__inside">
-                    <ul class="navigation__links">
-                        <li class="navigation__item"><nuxt-link class="navigation__link" to="/projects">Projects</nuxt-link></li>
-                        <li class="navigation__item"><nuxt-link class="navigation__link" to="/contact">Contact</nuxt-link></li>
-                    </ul>
-                </div>
-            </nav>
+            <transition name="navigation--slide" v-on:before-leave="beforeNavigationSlide" v-on:after-enter="afterNavigationSlide">
+                <nav class="navigation" v-if="isActive">
+                    <div class="navigation__inside">
+                        <ul class="navigation__links">
+                            <transition  name="navigation__item--slide">
+                                <li v-if="isLinkActive" class="navigation__item"><nuxt-link class="navigation__link" to="/projects">Projects</nuxt-link></li>
+                            </transition>
+                            <transition  name="navigation__item--slide" v-on:after-leave="afterNavigationLinkLeave">
+                                <li v-if="isLinkActive" class="navigation__item"><nuxt-link class="navigation__link" to="/contact">Contact</nuxt-link></li>
+                            </transition>
+                        </ul>
+                    </div>
+                </nav>
+            </transition>
 
         </div>
     </header>
@@ -32,9 +38,26 @@ export default {
     components: {
         Logo,
     },
+    methods: {
+        onBurgerClick: function(el) {
+            if (this.isActive) {
+                this.isLinkActive = false;
+                return;
+            }
+
+            this.isActive = true;
+        },
+        afterNavigationSlide: function(el) {
+            this.isLinkActive = true;
+        },
+        afterNavigationLinkLeave: function(el) {
+            this.isActive = false;
+        },
+    },
     data: function() {
         return {
             isActive: false,
+            isLinkActive: false,
         };
     },
     props: {
@@ -128,6 +151,13 @@ export default {
         z-index: 0;
     }
 
+    .navigation--slide-enter-active, .navigation--slide-leave-active {
+        transition: transform .5s;
+    }
+    .navigation--slide-enter, .navigation--slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        transform: translateX(-100%);
+    }
+
     .navigation__inside {
         position: absolute;
         top: 0;
@@ -154,6 +184,14 @@ export default {
     .navigation__link {
         color: $white;
         text-decoration: none;
+    }
+
+    .navigation__item--slide-enter-active, .navigation__item--slide-leave-active {
+        transition: transform .5s, opacity .5s;
+    }
+    .navigation__item--slide-enter, .navigation__item--slide-leave-to /* .fade-leave-active below version 2.1.8 */ {
+        transform: translateX(100%);
+        opacity: 0;
     }
 
     @media only screen and (min-width: $desktop-breakpoint) {
@@ -196,6 +234,22 @@ export default {
                     transform: translateY(0) rotate(-45deg);
                 }   
             }
+        }
+
+        .navigation__inside {
+            width: $desktop-breakpoint - 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            padding-left: 0;
+            padding-right: 0;
+        }
+
+        .navigation__item {
+            margin-bottom: 40px;
+        }
+
+        .navigation__link {
+            font-size: 30px;
         }
     }
 </style>
