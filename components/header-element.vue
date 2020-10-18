@@ -15,11 +15,11 @@
                 <nav class="navigation" v-if="isActive">
                     <div class="navigation__inside">
                         <ul class="navigation__links">
-                            <transition  name="navigation__item--slide">
-                                <li v-if="isLinkActive" class="navigation__item" @click="onBurgerClick"><nuxt-link class="navigation__link" to="/projects" >Projects</nuxt-link></li>
+                            <transition  name="navigation__item--slide" v-on:after-leave="afterNavigationLinkLeave">
+                                <li v-if="isLinkActive" class="navigation__item" @click="onBurgerClick"><nuxt-link class="navigation__link" to="/imprint" >Imprint</nuxt-link></li>
                             </transition>
                             <transition  name="navigation__item--slide" v-on:after-leave="afterNavigationLinkLeave">
-                                <li v-if="isLinkActive" class="navigation__item" @click="onBurgerClick"><nuxt-link class="navigation__link" to="/contact" >Contact</nuxt-link></li>
+                                <li v-if="isLinkActive" class="navigation__item" @click="onBurgerClick"><nuxt-link class="navigation__link" to="/privacy-policy" >Privacy Policy</nuxt-link></li>
                             </transition>
                         </ul>
                     </div>
