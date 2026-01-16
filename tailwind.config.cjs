@@ -16,8 +16,8 @@ module.exports = {
         'accent-strong': 'hsl(var(--accent-strong))',
       },
       fontFamily: {
-        sans: ['"IBM Plex Sans"', 'sans-serif'],
-        serif: ['"IBM Plex Serif"', 'serif'],
+        sans: ['"Google Sans"', 'sans-serif'],
+        serif: ['"Google Sans"', 'sans-serif'],
       },
       boxShadow: {
         soft: '0 16px 40px -20px rgba(0, 0, 0, 0.75)',
