@@ -7,8 +7,8 @@ const Contact = () => {
         <div className="grid gap-8 lg:grid-cols-[1.1fr_0.9fr] lg:items-center">
           <SectionHeader
             kicker="Kontakt"
-            title="Ich bin bereit, zuverlaessige Systeme zu bauen"
-            description="Wenn Sie einstellen, architektonische Unterstuetzung brauchen oder einen verlaesslichen Partner fuer die Umsetzung suchen, lassen Sie uns sprechen."
+            title="Ich bin bereit, zuverlässige Systeme zu bauen"
+            description="Wenn Sie einstellen, architektonische Unterstützung brauchen oder einen verlässlichen Partner für die Umsetzung suchen, lassen Sie uns sprechen."
           />
           <div className="card space-y-4">
             <p className="text-sm text-muted">

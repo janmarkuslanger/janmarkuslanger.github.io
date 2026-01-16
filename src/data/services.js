@@ -2,7 +2,7 @@ export const services = [
   {
     title: 'Softwareentwicklung',
     description:
-      'Ich liefere produktionsreife Features und Integrationen, die Auslieferungen verlaesslich halten und Qualitaet sichern.',
+      'Ich liefere produktionsreife Features und Integrationen, die Auslieferungen verlässlich halten und Qualität sichern.',
   },
   {
     title: 'Softwarearchitektur',
@@ -12,7 +12,7 @@ export const services = [
   {
     title: 'Technische Beratung',
     description:
-      'Ich fuehre kurze, fokussierte Einsaetze durch, um Blockaden zu loesen, Roadmaps zu schaerfen und Performance zu verbessern.',
+      'Ich führe kurze, fokussierte Einsätze durch, um Blockaden zu lösen, Roadmaps zu schärfen und Performance zu verbessern.',
   },
   {
     title: 'KI / Machine Learning Beratung',
@@ -22,6 +22,6 @@ export const services = [
   {
     title: 'Mentoring und Coaching',
     description:
-      'Ich staerke Entwicklerkompetenz durch Code-Reviews, Architektur-Sessions und praxisnahe Begleitung.',
+      'Ich stärke Entwicklerkompetenz durch Code-Reviews, Architektur-Sessions und praxisnahe Begleitung.',
   },
 ];

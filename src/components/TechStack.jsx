@@ -8,8 +8,8 @@ const TechStack = () => {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
           kicker="Technologien"
-          title="Ich nutze einen fokussierten, verlaesslichen Stack"
-          description="Ich setze auf bewaehrte Sprachen und Cloud-Tools, die Systeme robust, skalierbar und wartbar halten."
+          title="Ich nutze einen fokussierten, verlässlichen Stack"
+          description="Ich setze auf bewährte Sprachen und Cloud-Tools, die Systeme robust, skalierbar und wartbar halten."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {techStack.map((group) => (

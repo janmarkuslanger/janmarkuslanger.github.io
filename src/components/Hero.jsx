@@ -6,21 +6,21 @@ const Hero = () => {
           <div className="space-y-6 animate-fade-up">
             <p className="section-kicker">Softwareentwickler und Softwarearchitekt</p>
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-              Ich baue zuverlaessige Systeme mit Klarheit und Ruhe.
+              Ich baue zuverlässige Systeme mit Klarheit und Ruhe.
             </h1>
             <p className="text-lg leading-relaxed text-muted">
               Ich bin Softwareentwickler und Softwarearchitekt mit Fokus auf Clean Architecture,
-              wartbare Systeme und klare Problemloesung. Ich helfe Teams, verlaessliche Produkte zu
-              liefern, die sich langfristig weiterentwickeln lassen und an Geschaeftszielen
+              wartbare Systeme und klare Problemlösung. Ich helfe Teams, verlässliche Produkte zu
+              liefern, die sich langfristig weiterentwickeln lassen und an Geschäftszielen
               ausgerichtet bleiben.
             </p>
             <p className="text-sm text-muted">
-              Ausserhalb der Arbeit bin ich sportlich aktiv und staerke damit Disziplin,
-              Kontinuitaet und Balance.
+              Ausserhalb der Arbeit bin ich sportlich aktiv und stärke damit Disziplin,
+              Kontinuität und Balance.
             </p>
             <div className="flex flex-wrap gap-3">
               <a className="btn-primary" href="mailto:janlanger.softwareengineering@gmail.com">
-                Gespraech starten
+                Gespräch starten
               </a>
               <a className="btn-secondary" href="#services">
                 Leistungen ansehen
@@ -34,15 +34,15 @@ const Hero = () => {
             </div>
             <ul className="space-y-3 text-sm text-muted">
               <li>
-                Ich entwerfe Clean Architecture, die Teams schnell arbeiten laesst und Systeme
-                stabil haelt.
+                Ich entwerfe Clean Architecture, die Teams schnell arbeiten lässt und Systeme
+                stabil hält.
               </li>
               <li>Ich baue wartbare Codebasen mit klarer Verantwortung und nachhaltiger Umsetzung.</li>
-              <li>Ich klaere Problemstellungen gruendlich, bevor ich Loesungen baue.</li>
+              <li>Ich kläre Problemstellungen gründlich, bevor ich Lösungen baue.</li>
               <li>Ich kommuniziere kollaborativ mit klarem Fokus auf Umsetzung.</li>
             </ul>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-muted">
-              Ich bin fuer ausgewaehlte Freelance- und Consulting-Projekte verfuegbar.
+              Ich bin für ausgewählte Freelance- und Consulting-Projekte verfügbar.
             </div>
           </div>
         </div>

@@ -8,8 +8,8 @@ const Services = () => {
       <div className="mx-auto max-w-6xl px-6">
         <SectionHeader
           kicker="Leistungen"
-          title="Ich biete fokussierte Unterstuetzung von Strategie bis Umsetzung"
-          description="Ich unterstuetze Sie dabei, verlaessliche Software zu bauen, Unsicherheit zu reduzieren und die Umsetzung an Ergebnissen auszurichten."
+          title="Ich biete fokussierte Unterstützung von Strategie bis Umsetzung"
+          description="Ich unterstütze Sie dabei, verlässliche Software zu bauen, Unsicherheit zu reduzieren und die Umsetzung an Ergebnissen auszurichten."
         />
         <div className="mt-10 grid gap-6 md:grid-cols-2">
           {services.map((service) => (

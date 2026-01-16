@@ -4,7 +4,7 @@ const Privacy = () => {
   return (
     <LegalLayout
       title="Datenschutz"
-      description="Dies ist ein Platzhaltertext und wird mit meiner Datenschutzerklaerung ersetzt."
+      description="Dies ist ein Platzhaltertext und wird mit meiner Datenschutzerklärung ersetzt."
     >
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Verantwortliche Stelle</h2>
@@ -25,30 +25,30 @@ const Privacy = () => {
         <p>
           Ich erhebe nicht bewusst personenbezogene Daten ausser den Informationen, die Sie mir bei
           einer Kontaktaufnahme senden. Dieser Abschnitt wird mit Details zu Analytics, Formularen
-          oder Hosting-Logs ergaenzt, falls genutzt.
+          oder Hosting-Logs ergänzt, falls genutzt.
         </p>
       </section>
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Zweck der Verarbeitung</h2>
         <p>
-          Ich verarbeite Daten, um Anfragen zu beantworten und einen sicheren, verlaesslichen
-          Betrieb der Website zu gewaehren. Dieser Abschnitt wird an meine tatsaechlichen Zwecke
+          Ich verarbeite Daten, um Anfragen zu beantworten und einen sicheren, verlässlichen
+          Betrieb der Website zu gewähren. Dieser Abschnitt wird an meine tatsächlichen Zwecke
           angepasst.
         </p>
       </section>
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Speicherdauer</h2>
         <p>
-          Ich speichere personenbezogene Daten nur so lange, wie es fuer den Zweck erforderlich ist.
-          Dieser Abschnitt wird mit konkreten Fristen ergaenzt, falls relevant.
+          Ich speichere personenbezogene Daten nur so lange, wie es für den Zweck erforderlich ist.
+          Dieser Abschnitt wird mit konkreten Fristen ergänzt, falls relevant.
         </p>
       </section>
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Ihre Rechte</h2>
         <p>
-          Sie haben das Recht auf Auskunft, Berichtigung, Loeschung oder Einschraenkung der
-          Verarbeitung Ihrer personenbezogenen Daten. Sie koennen ausserdem der Verarbeitung
-          widersprechen und Datenuebertragbarkeit verlangen. Fuer Anfragen nutzen Sie bitte die
+          Sie haben das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der
+          Verarbeitung Ihrer personenbezogenen Daten. Sie können ausserdem der Verarbeitung
+          widersprechen und Datenübertragbarkeit verlangen. Für Anfragen nutzen Sie bitte die
           Kontaktdaten oben.
         </p>
       </section>
