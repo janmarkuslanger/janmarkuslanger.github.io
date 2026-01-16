@@ -1,7 +1,6 @@
 export const techStack = [
   {
     title: 'Sprachen',
-    emphasis: true,
     items: ['Go', 'Python', 'Node.js', 'TypeScript'],
   },
   {
