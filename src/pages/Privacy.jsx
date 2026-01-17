@@ -34,14 +34,7 @@ const Privacy = () => {
         </p>
       </section>
       <section className="space-y-2">
-        <h2 className="text-base font-semibold text-text">Google Fonts</h2>
-        <p>
-          Diese Website lädt Schriftarten von Google Fonts. Anbieter ist Google Ireland Limited,
-          Gordon House, Barrow Street, Dublin 4, Irland (ggf. Google LLC, USA). Beim Aufruf der
-          Seiten lädt Ihr Browser die benötigten Fonts direkt von Google, wodurch Ihre IP-Adresse
-          an Google übermittelt wird. Die Nutzung erfolgt im Interesse einer einheitlichen und
-          ansprechenden Darstellung der Website (Art. 6 Abs. 1 lit. f DSGVO).
-        </p>
+
       </section>
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Kontaktaufnahme</h2>
