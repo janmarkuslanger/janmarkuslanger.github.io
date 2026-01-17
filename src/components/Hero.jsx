@@ -33,13 +33,10 @@ const Hero = () => {
               <span className="text-xs uppercase tracking-[0.3em] text-accent">Fokus</span>
             </div>
             <ul className="space-y-3 text-sm text-muted">
-              <li>
-                Ich entwerfe Clean Architecture, die Teams schnell arbeiten lässt und Systeme
-                stabil hält.
-              </li>
-              <li>Ich baue wartbare Codebasen mit klarer Verantwortung und nachhaltiger Umsetzung.</li>
-              <li>Ich kläre Problemstellungen gründlich, bevor ich Lösungen baue.</li>
-              <li>Ich kommuniziere kollaborativ mit klarem Fokus auf Umsetzung.</li>
+              <li>Ich analysiere Anforderungen gründlich und kläre Ziele, Risiken und Prioritäten.</li>
+              <li>Ich übersetze Anforderungen in umsetzbare Lösungen und mache Trade-offs transparent.</li>
+              <li>Ich kommuniziere Entscheidungen klar mit Stakeholdern und Teams.</li>
+              <li>Ich achte auf Codequalität mit Tests, klaren Strukturen und wartbaren Schnittstellen.</li>
             </ul>
             <div className="rounded-2xl border border-white/10 bg-white/5 p-4 text-xs text-muted">
               Ich bin für ausgewählte Freelance- und Consulting-Projekte verfügbar.
