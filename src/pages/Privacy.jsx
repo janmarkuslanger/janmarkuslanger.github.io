@@ -4,59 +4,77 @@ const Privacy = () => {
   return (
     <LegalLayout
       title="Datenschutz"
-      description="Dies ist ein Platzhaltertext und wird mit meiner Datenschutzerklärung ersetzt."
+      description="Informationen zur Verarbeitung personenbezogener Daten auf dieser Website."
     >
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Verantwortliche Stelle</h2>
         <p>
-          Jan Markus Langer
+          Jan-Markus Langer
           <br />
-          Strasse
+          Breslauer Str. 7
           <br />
-          PLZ Ort
+          51789 Lindlar
           <br />
-          Land
+          Deutschland
           <br />
           E-Mail: janlanger.softwareengineering@gmail.com
         </p>
       </section>
       <section className="space-y-2">
-        <h2 className="text-base font-semibold text-text">Erhobene Daten</h2>
+        <h2 className="text-base font-semibold text-text">Hosting</h2>
         <p>
-          Ich erhebe nicht bewusst personenbezogene Daten ausser den Informationen, die Sie mir bei
-          einer Kontaktaufnahme senden. Dieser Abschnitt wird mit Details zu Analytics, Formularen
-          oder Hosting-Logs ergänzt, falls genutzt.
+          Diese Website wird über GitHub Pages bereitgestellt. Anbieter ist GitHub, Inc.,
+          88 Colin P. Kelly Jr. St., San Francisco, CA 94107, USA. Beim Aufruf der Website werden
+          durch GitHub technische Zugriffsdaten (z. B. IP-Adresse, Datum und Uhrzeit des Abrufs,
+          angeforderte Seite, Referrer, Browser-Informationen) in Server-Logfiles verarbeitet.
+          Die Verarbeitung erfolgt zur Sicherstellung des technischen Betriebs und der Sicherheit
+          der Website auf Grundlage von Art. 6 Abs. 1 lit. f DSGVO. Dabei kann eine Verarbeitung
+          von Daten in den USA nicht ausgeschlossen werden; GitHub nutzt hierfür
+          Standardvertragsklauseln.
         </p>
       </section>
       <section className="space-y-2">
-        <h2 className="text-base font-semibold text-text">Zweck der Verarbeitung</h2>
+        <h2 className="text-base font-semibold text-text">Google Fonts</h2>
         <p>
-          Ich verarbeite Daten, um Anfragen zu beantworten und einen sicheren, verlässlichen
-          Betrieb der Website zu gewähren. Dieser Abschnitt wird an meine tatsächlichen Zwecke
-          angepasst.
+          Diese Website lädt Schriftarten von Google Fonts. Anbieter ist Google Ireland Limited,
+          Gordon House, Barrow Street, Dublin 4, Irland (ggf. Google LLC, USA). Beim Aufruf der
+          Seiten lädt Ihr Browser die benötigten Fonts direkt von Google, wodurch Ihre IP-Adresse
+          an Google übermittelt wird. Die Nutzung erfolgt im Interesse einer einheitlichen und
+          ansprechenden Darstellung der Website (Art. 6 Abs. 1 lit. f DSGVO).
         </p>
       </section>
       <section className="space-y-2">
-        <h2 className="text-base font-semibold text-text">Speicherdauer</h2>
+        <h2 className="text-base font-semibold text-text">Kontaktaufnahme</h2>
         <p>
-          Ich speichere personenbezogene Daten nur so lange, wie es für den Zweck erforderlich ist.
-          Dieser Abschnitt wird mit konkreten Fristen ergänzt, falls relevant.
+          Wenn Sie mich per E-Mail kontaktieren, werden die von Ihnen übermittelten Daten (z. B.
+          Name, E-Mail-Adresse, Nachricht) zur Bearbeitung der Anfrage verarbeitet. Rechtsgrundlage
+          ist Art. 6 Abs. 1 lit. b DSGVO (vorvertragliche Maßnahmen) oder Art. 6 Abs. 1 lit. f DSGVO
+          (berechtigtes Interesse an der Beantwortung von Anfragen). Die Daten werden gelöscht,
+          sobald die Anfrage abschließend bearbeitet ist und keine gesetzlichen Aufbewahrungspflichten
+          entgegenstehen.
+        </p>
+      </section>
+      <section className="space-y-2">
+        <h2 className="text-base font-semibold text-text">Cookies und Tracking</h2>
+        <p>
+          Diese Website setzt keine Cookies, kein Tracking und keine Analyse-Tools ein.
+        </p>
+      </section>
+      <section className="space-y-2">
+        <h2 className="text-base font-semibold text-text">Externe Links</h2>
+        <p>
+          Diese Website enthält Links zu externen Profilen (GitHub, LinkedIn). Beim Anklicken gelten
+          die Datenschutzbestimmungen der jeweiligen Anbieter. Dabei kann es zu einer Verarbeitung
+          personenbezogener Daten außerhalb der EU kommen.
         </p>
       </section>
       <section className="space-y-2">
         <h2 className="text-base font-semibold text-text">Ihre Rechte</h2>
         <p>
           Sie haben das Recht auf Auskunft, Berichtigung, Löschung oder Einschränkung der
-          Verarbeitung Ihrer personenbezogenen Daten. Sie können ausserdem der Verarbeitung
-          widersprechen und Datenübertragbarkeit verlangen. Für Anfragen nutzen Sie bitte die
-          Kontaktdaten oben.
-        </p>
-      </section>
-      <section className="space-y-2">
-        <h2 className="text-base font-semibold text-text">Drittanbieter</h2>
-        <p>
-          Ich nutze die folgenden Drittanbieter (Analytics, Hosting, E-Mail): [Platzhalter]. Wenn
-          keine genutzt werden, wird dies hier explizit genannt.
+          Verarbeitung Ihrer personenbezogenen Daten. Sie können außerdem der Verarbeitung
+          widersprechen und Datenübertragbarkeit verlangen. Zudem haben Sie das Recht, sich bei
+          einer Datenschutzaufsichtsbehörde zu beschweren.
         </p>
       </section>
     </LegalLayout>
