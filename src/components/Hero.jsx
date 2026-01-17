@@ -6,7 +6,7 @@ const Hero = () => {
           <div className="space-y-6 animate-fade-up">
             <p className="section-kicker">Softwareentwickler und Softwarearchitekt</p>
             <h1 className="text-4xl font-semibold tracking-tight sm:text-5xl">
-              Ich baue zuverlässige Systeme mit Klarheit und Ruhe.
+              Saubere Lösungen, wartbare Systeme, ohne unnötige Komplexität.
             </h1>
             <p className="text-lg leading-relaxed text-muted">
               Ich bin Softwareentwickler und Softwarearchitekt mit Fokus auf einfache und
