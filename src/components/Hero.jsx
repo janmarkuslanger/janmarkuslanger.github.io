@@ -9,10 +9,10 @@ const Hero = () => {
               Ich baue zuverlässige Systeme mit Klarheit und Ruhe.
             </h1>
             <p className="text-lg leading-relaxed text-muted">
-              Ich bin Softwareentwickler und Softwarearchitekt mit Fokus auf Clean Architecture,
-              wartbare Systeme und klare Problemlösung. Ich helfe Teams, verlässliche Produkte zu
-              liefern, die sich langfristig weiterentwickeln lassen und an Geschäftszielen
-              ausgerichtet bleiben.
+              Ich bin Softwareentwickler und Softwarearchitekt mit Fokus auf einfache und
+              verständliche Architekturen, wartbare Systeme und klare Problemlösung. Ich helfe
+              Teams, verlässliche Produkte zu liefern, die sich langfristig weiterentwickeln lassen
+              und an Geschäftszielen ausgerichtet bleiben.
             </p>
             <p className="text-sm text-muted">
               Ausserhalb der Arbeit bin ich sportlich aktiv und stärke damit Disziplin,
