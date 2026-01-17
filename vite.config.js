@@ -1,16 +1,17 @@
-import { dirname, resolve } from 'node:path'
-import { fileURLToPath } from 'node:url'
-import { defineConfig } from 'vite'
-
-const __dirname = dirname(fileURLToPath(import.meta.url))
+import { defineConfig } from 'vite';
+import react from '@vitejs/plugin-react';
+import { resolve } from 'path';
 
 export default defineConfig({
+  base: '/',
+  plugins: [react()],
   build: {
     rollupOptions: {
       input: {
         main: resolve(__dirname, 'index.html'),
-        nested: resolve(__dirname, 'datenschutz/index.html'),
+        imprint: resolve(__dirname, 'imprint.html'),
+        privacy: resolve(__dirname, 'privacy.html'),
       },
     },
   },
-})
+});
