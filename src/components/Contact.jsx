@@ -8,7 +8,6 @@ const Contact = () => {
           <SectionHeader
             kicker="Kontakt"
             title="Ich bin bereit, zuverlässige Systeme zu bauen"
-            description="Wenn Sie einstellen, architektonische Unterstützung brauchen oder einen verlässlichen Partner für die Umsetzung suchen, lassen Sie uns sprechen."
           />
           <div className="card space-y-4">
             <p className="text-sm text-muted">

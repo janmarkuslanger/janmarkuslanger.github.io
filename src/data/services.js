@@ -7,7 +7,7 @@ export const services = [
   {
     title: 'Softwarearchitektur',
     description:
-      'Ich entwerfe skalierbare, wartbare Systeme mit klaren Grenzen, damit Teams ausgerichtet bleiben und technische Schulden begrenzt werden.',
+      'Ich entwerfe wartbare, einfache Systeme, entferne Komplexität und schaffe klare Grenzen, damit sie im Alltag zuverlässig funktionieren.',
   },
   {
     title: 'Technische Beratung',
@@ -17,11 +17,11 @@ export const services = [
   {
     title: 'KI / Machine Learning Beratung',
     description:
-      'Ich setze ML dort ein, wo messbarer Nutzen entsteht, und validiere Wirkung, bevor skaliert wird.',
+      'Ich berate zu KI-Ansätzen, Einsatzmöglichkeiten und Grenzen, damit Entscheidungen fundiert und umsetzbar sind.',
   },
   {
     title: 'Mentoring und Coaching',
     description:
-      'Ich stärke Entwicklerkompetenz durch Code-Reviews, Architektur-Sessions und praxisnahe Begleitung.',
+      'Ich begleite Junioren menschlich und fachlich, gebe Orientierung, Feedback und helfe beim Aufbau von Selbstvertrauen.',
   },
 ];
