@@ -1,0 +1,50 @@
+---
+import BaseLayout from '../../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+export async function getStaticPaths() {
+  const posts = await getCollection('blog');
+  return posts.map((post) => ({
+    params: { slug: post.slug },
+    props: { post },
+  }));
+}
+
+const { post } = Astro.props;
+const { Content } = await post.render();
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('de-DE', {
+    year: 'numeric',
+    month: 'long',
+    day: 'numeric',
+  });
+}
+---
+
+<BaseLayout title={`${post.data.title} | Jan Markus Langer`} description={post.data.description}>
+  <div class="container">
+    <a href="/blog" class="back-link">← Blog</a>
+
+    <article>
+      <header class="post-header">
+        <p class="post-meta">{formatDate(post.data.date)}</p>
+        <h1 class="post-headline">{post.data.title}</h1>
+        {post.data.description && (
+          <p class="post-excerpt">{post.data.description}</p>
+        )}
+        {post.data.tags && post.data.tags.length > 0 && (
+          <div class="tag-list">
+            {post.data.tags.map((tag) => (
+              <span class="tag">{tag}</span>
+            ))}
+          </div>
+        )}
+      </header>
+
+      <div class="prose">
+        <Content />
+      </div>
+    </article>
+  </div>
+</BaseLayout>

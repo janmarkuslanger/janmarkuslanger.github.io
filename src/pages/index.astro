@@ -1,0 +1,53 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+import { getCollection } from 'astro:content';
+
+const posts = (await getCollection('blog'))
+  .sort((a, b) => b.data.date.getTime() - a.data.date.getTime())
+  .slice(0, 3);
+
+function formatDate(date: Date) {
+  return date.toLocaleDateString('de-DE', {
+    year: 'numeric',
+    month: 'short',
+    day: 'numeric',
+  });
+}
+---
+
+<BaseLayout title="Jan Markus Langer | Softwareentwickler">
+  <div class="container">
+
+    <section class="hero">
+      <h1 class="hero-name">Jan Markus<br />Langer</h1>
+      <p class="hero-tagline">
+        Softwareentwickler und Softwarearchitekt.<br />
+        Klare Strukturen, wartbare Systeme, ohne unnötige Komplexität.
+      </p>
+      <p class="hero-contact">
+        <a href="mailto:janlanger.softwareengineering@gmail.com">Schreib mir</a>
+      </p>
+    </section>
+
+    {posts.length > 0 && (
+      <section>
+        <p class="section-label">Zuletzt geschrieben</p>
+        <ul class="post-list">
+          {posts.map((post) => (
+            <li class="post-item">
+              <a href={`/blog/${post.slug}`} class="post-item-link">
+                <span class="post-title">{post.data.title}</span>
+                <span class="post-date">{formatDate(post.data.date)}</span>
+              </a>
+              {post.data.description && (
+                <p class="post-description">{post.data.description}</p>
+              )}
+            </li>
+          ))}
+        </ul>
+        <a href="/blog" class="view-all">Alle Posts →</a>
+      </section>
+    )}
+
+  </div>
+</BaseLayout>
