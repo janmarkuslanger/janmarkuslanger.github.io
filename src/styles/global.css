@@ -435,6 +435,11 @@ nav a:hover {
   line-height: 1.7;
 }
 
+/* ─── Main spacing ───────────────────────────────────────── */
+main {
+  padding-bottom: 5rem;
+}
+
 /* ─── Footer ─────────────────────────────────────────────── */
 footer {
   border-top: 1px solid var(--light);
