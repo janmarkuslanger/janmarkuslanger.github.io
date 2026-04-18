@@ -1,0 +1,165 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+---
+
+<BaseLayout
+  title="1:1 Claude Coaching | Jan Markus Langer"
+  description="Eine Stunde 1:1 Coaching zu Claude und KI-Tools. Lern wie du Claude wirklich produktiv nutzt."
+>
+  <div class="container">
+
+    <section class="hero">
+      <h1 class="hero-name" style="font-size: clamp(2.25rem, 7vw, 4.5rem);">1:1 Claude<br />Coaching</h1>
+      <p class="hero-tagline">Eine Stunde. Dein Setup. Deine Fragen.</p>
+      <p class="hero-tagline" style="margin-bottom: 0; margin-top: -1rem;">
+        Ich helfe dir, Claude wirklich produktiv zu nutzen — für deinen konkreten Anwendungsfall.
+      </p>
+    </section>
+
+    <section style="margin-bottom: 4rem;">
+      <p class="section-label">Was ist Claude</p>
+      <p style="font-size: 1rem; line-height: 1.8; max-width: 600px; margin-bottom: 1.5rem;">
+        Claude ist der KI-Assistent von Anthropic — und aktuell eines der leistungsfähigsten
+        Sprachmodelle überhaupt. Besonders stark bei langen, komplexen Aufgaben: strukturiertes
+        Denken, präzises Schreiben, Code-Analyse, Dokumentation.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.8; max-width: 600px; margin-bottom: 1.5rem;">
+        Claude gibt es in verschiedenen Varianten — je nachdem wie und wo du arbeiten willst:
+      </p>
+      <ul class="post-list">
+        <li class="post-item">
+          <div>
+            <span class="post-title">Claude</span>
+            <p class="post-description">
+              Die Web- und App-Oberfläche für den alltäglichen Einsatz. Texte schreiben,
+              recherchieren, Ideen entwickeln, Dokumente analysieren — direkt im Browser
+              oder per App, ohne Setup. Mit Projects lässt sich Kontext dauerhaft speichern
+              und strukturieren.
+            </p>
+          </div>
+        </li>
+        <li class="post-item" style="border-bottom: 1px solid var(--light);">
+          <div>
+            <span class="post-title">Claude Code</span>
+            <p class="post-description">
+              Das CLI-Tool für Entwickler. Claude Code arbeitet direkt in deiner Codebasis —
+              liest Dateien, schreibt Code, führt Kommandos aus. Kein Copy-Paste, kein
+              manuelles Kontext-Einfügen. Erweiterbar über MCP-Server, Hooks und eigene
+              Konfiguration — Claude als echter Pair-Programmer im Terminal.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section style="border-top: 1px solid var(--light); padding-top: 3rem; margin-bottom: 4rem;">
+      <p class="section-label">Warum ein Coaching</p>
+      <p style="font-size: 1rem; line-height: 1.8; max-width: 600px; margin-bottom: 1.5rem;">
+        Claude ist mächtig — aber der Unterschied zwischen "irgendwie benutzen" und
+        "wirklich effektiv einsetzen" ist groß. Die meisten kratzen nur an der Oberfläche:
+        zu kurze Prompts, falsche Erwartungen, kein klares Setup.
+      </p>
+      <p style="font-size: 1rem; line-height: 1.8; max-width: 600px;">
+        In einer Session schauen wir uns deinen konkreten Alltag an. Welches Tool passt zu
+        dir? Wie formulierst du Aufgaben so, dass Claude wirklich liefert? Wo sparst du
+        Stunden — und wo ist KI der falsche Ansatz?
+      </p>
+    </section>
+
+    <section style="border-top: 1px solid var(--light); padding-top: 3rem; margin-bottom: 4rem;">
+      <p class="section-label">Was wir in der Session angehen können</p>
+      <ul class="post-list">
+        <li class="post-item">
+          <div>
+            <span class="post-title">Deinen Anwendungsfall verstehen</span>
+            <p class="post-description">
+              Wir schauen gemeinsam wo Claude wirklich reinpasst — in deinen Job, dein Projekt,
+              deinen Alltag. Und wo nicht.
+            </p>
+          </div>
+        </li>
+        <li class="post-item">
+          <div>
+            <span class="post-title">Prompting richtig lernen</span>
+            <p class="post-description">
+              Struktur, Kontext, Ton, Iteration — wie du Aufgaben so formulierst, dass Claude
+              verlässlich und präzise liefert. Inklusive der häufigsten Fehler und wie du sie vermeidest.
+            </p>
+          </div>
+        </li>
+        <li class="post-item">
+          <div>
+            <span class="post-title">Projects und Memory sinnvoll einsetzen</span>
+            <p class="post-description">
+              Wie du Kontext dauerhaft speicherst, Projekte strukturierst und Claude so
+              einrichtest, dass er deinen Stil und deine Anforderungen kennt.
+            </p>
+          </div>
+        </li>
+        <li class="post-item">
+          <div>
+            <span class="post-title">Claude Code einrichten und konfigurieren</span>
+            <p class="post-description">
+              Setup, CLAUDE.md, Slash Commands, Einstellungen — wie du Claude Code so
+              konfigurierst, dass es sich deiner Codebasis und deinem Workflow anpasst.
+            </p>
+          </div>
+        </li>
+        <li class="post-item">
+          <div>
+            <span class="post-title">MCP-Server anbinden</span>
+            <p class="post-description">
+              Das Model Context Protocol erlaubt es, Claude externe Tools und Datenquellen
+              direkt zugänglich zu machen — Datenbanken, APIs, lokale Dateien, Browser,
+              eigene Services. Wir richten gemeinsam ein was für dich relevant ist.
+            </p>
+          </div>
+        </li>
+        <li class="post-item">
+          <div>
+            <span class="post-title">Hooks und Automatisierungen</span>
+            <p class="post-description">
+              Hooks lassen dich eigene Shell-Kommandos an Ereignisse in Claude Code hängen —
+              Tests automatisch laufen lassen, Code formatieren, Aktionen bestätigen lassen.
+              Wir bauen das konkret für deinen Workflow.
+            </p>
+          </div>
+        </li>
+        <li class="post-item" style="border-bottom: 1px solid var(--light);">
+          <div>
+            <span class="post-title">Klarer nächster Schritt</span>
+            <p class="post-description">
+              Du gehst nicht mit einem vagen Gefühl raus, sondern mit einem konkreten Plan:
+              was du als nächstes ausprobierst, was du einrichtest, was du weglässt.
+            </p>
+          </div>
+        </li>
+      </ul>
+    </section>
+
+    <section style="border-top: 1px solid var(--light); padding-top: 3rem; margin-bottom: 4rem;">
+      <p class="section-label">Für wen</p>
+      <p style="font-size: 0.9rem; color: var(--gray); line-height: 1.7; max-width: 520px;">
+        Für Freelancer, Entwickler und Wissensarbeiter, die Claude und KI-Tools ernsthaft
+        in ihren Alltag integrieren wollen — ohne stundenlang selbst auszuprobieren.
+        Egal ob du gerade anfängst oder Claude schon kennst und mehr rausholen willst.
+      </p>
+    </section>
+
+    <section style="border-top: 1px solid var(--light); padding-top: 3rem; padding-bottom: 2rem;">
+      <p class="section-label">Preis & Buchung</p>
+      <p style="font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.75rem;">
+        € 149
+      </p>
+      <p style="font-size: 0.85rem; color: var(--gray); margin-bottom: 2rem;">
+        pro Session · 60 Minuten · Remote
+      </p>
+      <p class="hero-contact">
+        <a href="mailto:janlanger.softwareengineering@gmail.com?subject=Anfrage%3A%201%3A1%20Claude%20Coaching&body=Hallo%20Jan%2C%0A%0AIch%20interessiere%20mich%20f%C3%BCr%20eine%201%3A1%20Claude%20Coaching%20Session.%0A%0AEin%20bisschen%20zu%20mir%3A%0A%0A">
+          Session anfragen →
+        </a>
+      </p>
+    </section>
+
+  </div>
+</BaseLayout>
