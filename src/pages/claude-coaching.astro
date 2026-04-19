@@ -6,6 +6,29 @@ import BaseLayout from '../layouts/BaseLayout.astro';
   title="1:1 Claude Coaching | Jan Markus Langer"
   description="Eine Stunde 1:1 Coaching zu Claude und KI-Tools. Lern wie du Claude wirklich produktiv nutzt."
 >
+  <script type="application/ld+json" set:html={JSON.stringify({
+    "@context": "https://schema.org",
+    "@type": "Service",
+    "name": "1:1 Claude Coaching",
+    "description": "Eine Stunde 1:1 Coaching zu Claude und KI-Tools. Lern wie du Claude wirklich produktiv nutzt — für deinen konkreten Anwendungsfall.",
+    "provider": {
+      "@type": "Person",
+      "name": "Jan Markus Langer",
+      "url": "https://janmarkuslanger.github.io"
+    },
+    "serviceType": "KI-Coaching",
+    "areaServed": {
+      "@type": "Country",
+      "name": "Germany"
+    },
+    "offers": {
+      "@type": "Offer",
+      "price": "149",
+      "priceCurrency": "EUR",
+      "description": "60 Minuten 1:1 Coaching, Remote"
+    },
+    "url": "https://janmarkuslanger.github.io/claude-coaching"
+  })} />
   <div class="container">
 
     <section class="hero">
@@ -17,7 +40,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <section style="margin-bottom: 4rem;">
-      <p class="section-label">Was ist Claude</p>
+      <h2 class="section-label">Was ist Claude</h2>
       <p style="font-size: 1rem; line-height: 1.8; max-width: 600px; margin-bottom: 1.5rem;">
         Claude ist der KI-Assistent von Anthropic — und aktuell eines der leistungsfähigsten
         Sprachmodelle überhaupt. Besonders stark bei langen, komplexen Aufgaben: strukturiertes
@@ -53,7 +76,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <section style="border-top: 1px solid var(--light); padding-top: 3rem; margin-bottom: 4rem;">
-      <p class="section-label">Warum ein Coaching</p>
+      <h2 class="section-label">Warum ein Coaching</h2>
       <p style="font-size: 1rem; line-height: 1.8; max-width: 600px; margin-bottom: 1.5rem;">
         Claude ist mächtig — aber der Unterschied zwischen "irgendwie benutzen" und
         "wirklich effektiv einsetzen" ist groß. Die meisten kratzen nur an der Oberfläche:
@@ -67,7 +90,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <section style="border-top: 1px solid var(--light); padding-top: 3rem; margin-bottom: 4rem;">
-      <p class="section-label">Was wir in der Session angehen können</p>
+      <h2 class="section-label">Was wir in der Session angehen können</h2>
       <ul class="post-list">
         <li class="post-item">
           <div>
@@ -138,7 +161,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <section style="border-top: 1px solid var(--light); padding-top: 3rem; margin-bottom: 4rem;">
-      <p class="section-label">Für wen</p>
+      <h2 class="section-label">Für wen</h2>
       <p style="font-size: 0.9rem; color: var(--gray); line-height: 1.7; max-width: 520px;">
         Für Freelancer, Entwickler und Wissensarbeiter, die Claude und KI-Tools ernsthaft
         in ihren Alltag integrieren wollen — ohne stundenlang selbst auszuprobieren.
@@ -147,7 +170,7 @@ import BaseLayout from '../layouts/BaseLayout.astro';
     </section>
 
     <section style="border-top: 1px solid var(--light); padding-top: 3rem; padding-bottom: 2rem;">
-      <p class="section-label">Preis & Buchung</p>
+      <h2 class="section-label">Preis & Buchung</h2>
       <p style="font-size: clamp(2.5rem, 8vw, 4rem); font-weight: 600; letter-spacing: -0.04em; line-height: 1; margin-bottom: 0.75rem;">
         € 149
       </p>

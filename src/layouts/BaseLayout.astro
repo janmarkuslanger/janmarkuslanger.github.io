@@ -10,6 +10,8 @@ const {
   title,
   description = 'Softwareentwickler und Softwarearchitekt mit Fokus auf einfache Architekturen und wartbare Systeme.',
 } = Astro.props;
+
+const canonicalURL = new URL(Astro.url.pathname, 'https://janmarkuslanger.github.io');
 ---
 
 <!DOCTYPE html>
@@ -20,9 +22,11 @@ const {
     <title>{title}</title>
     <meta name="description" content={description} />
     <link rel="icon" href="/favicon.svg" type="image/svg+xml" />
+    <link rel="canonical" href={canonicalURL} />
     <meta property="og:title" content={title} />
     <meta property="og:description" content={description} />
     <meta property="og:type" content="website" />
+    <meta property="og:url" content={canonicalURL} />
   </head>
   <body>
     <header>
